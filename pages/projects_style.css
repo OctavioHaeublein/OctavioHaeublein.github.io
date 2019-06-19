@@ -15,6 +15,9 @@ COLORES EMPLEADOS:
 	text-decoration: none;
 	color:#2F2933;
 	border-collapse: collapse;
+	animation-name: aparecer;
+	animation-duration: 0.5s;
+
 }
 
 #container{
@@ -53,19 +56,21 @@ COLORES EMPLEADOS:
 	color: #2F2933;
 	font-size: 16px;
 	background-color: transparent;
-	animation-name: aparecer;
-	animation-duration: 0.5s;
 }
 
 #head{
 	float:left;
 	margin-left:2%;
 	padding-top: 80px;
+
 }
 
 #bottom{
 	background-image: linear-gradient(45deg,#29D8C2,#BDF270);
-	border-bottom:6px solid #ECF0F1;
+	height: 60%;
+	width: 100%;
+	border-bottom: 6px solid white;
+	
 }
 
 #about{
@@ -78,12 +83,12 @@ COLORES EMPLEADOS:
 	font-family: 'Lobster Two', cursive;
 	font-size: 400%;
 	font-weight: 700;
-	animation-name: aparecer;
-	animation-duration: 0.5s;
+
+
 }
 
 .subtitle{
-	width: 100%;
+	width:100%;
 	background-color: transparent;
 	font-size:140%;
 	font-style: italic;
@@ -98,13 +103,13 @@ COLORES EMPLEADOS:
 	line-height: 1.5;
 	text-indent: 40px;
 	padding-top: 20px;
+
 }
 
 #about .title{
 	width: 40%;
 	background-color: transparent;
 	margin-left: 12%;
-
 }
 #p1{
 	clear:left;
@@ -125,8 +130,7 @@ COLORES EMPLEADOS:
 }
 
 @keyframes aparecer{
-	0% {color:transparent;transform: rotate(20deg);}
-	50%{color:#2F2933;transform: rotate(-20deg);}
-	100%{color:#2F2933;transform: rotate(0deg);}
-
+	0% {color:transparent;}
+	100%{color:#2F2933;}
+	
 }
