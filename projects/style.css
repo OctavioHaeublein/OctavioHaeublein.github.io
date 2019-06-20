@@ -6,19 +6,24 @@
 	text-decoration: none;
 	color:#2F2933;
 	border-collapse: collapse;
+	border-radius: 20px;
+
 
 }
 
 #container{
 	margin:auto;
+	margin-top: 1%;
+	margin-bottom: 2%;
 	width: 90%;
 	height: 100vh;
 	background-color: white;
+	
+	
 }
 
 #top{
-	/*background-image: url(src/header-background.jpg);*/
-	background: linear-gradient(to right,#29D9C2,#BDF271);
+	background:  linear-gradient(to right,#3BE3CC,#DBFF8B);
 	color:#ECF0F1;
 	width:100%;
 	height: 40%;
@@ -28,6 +33,24 @@
 #top .title, .subtitle{
 	margin-left: 25px;
 	margin-top: 25px;
+}
+
+.title{
+	font-family: 'Lobster Two', cursive;
+	font-size: 400%;
+	font-weight: 700;
+	animation-name: giro;
+	animation-duration: 0.8s;
+}
+
+.subtitle{
+	width: 100%;
+	background-color: transparent;
+	font-size:140%;
+	font-style: italic;
+	font-style: lighter;
+	animation-name: aparecer;
+	animation-duration: 1s;
 }
 
 #index{
@@ -43,78 +66,34 @@
 	float: right;
 	margin-right: 50px;
 	color: #2F2933;
-	font-size: 16px;
+	font-size: 80%;
 	background-color: transparent;
 	animation-name: aparecer;
-	animation-duration: 0.5s;
+	animation-duration: 1s;
 }
 
 #head{
 	float:left;
 	margin-left:2%;
 	padding-top: 80px;
-
 }
 
 #bottom{
-	background-image: linear-gradient(45deg,#29D8C2,#BDF270);
-	height: 60%;
-	width: 100%;
-	border-bottom: 6px solid white;
+	background-image: linear-gradient(45deg,#3BE3CC,#DBFF8B);
+	border-bottom:6px solid #ECF0F1;
+	
 	
 }
 
-#about{
-	padding: 2%;
-	float:left;
-	height: 60vh;
-}
-
-.title{
-	font-family: 'Lobster Two', cursive;
-	font-size: 400%;
-	font-weight: 700;
-	animation-name: giro;
-	animation-duration: 0.5s;
-
+#estacion{
 
 }
 
-.subtitle{
-	width:100%;
-	background-color: transparent;
-	font-size:140%;
-	font-style: italic;
-	font-style: lighter;
-	animation-name: aparecer;
-	animation-duration: 0.5s;
-}
-
-#p1, #p2{
-	float: left;
-	width: 49%;
-	text-align: justify;
-	font-size: 130%;
-	line-height: 1.5;
-	text-indent: 40px;
-	padding-top: 20px;
-	animation-name: aparecer;
-	animation-duration: 0.5s;
+#webpage{
 
 }
 
-#about .title{
-	width: 40%;
-	background-color: transparent;
-	margin-left: 12%;
-}
-#p1{
-	clear:left;
-}
-
-#p2{
-	float: right;
-	clear: right;
+#ssearch{
 	
 }
 
@@ -123,7 +102,8 @@
 	font-weight: 10;
 	background-color: #2F2933;
 	color: #ECF0F1;
-	padding-left: 20px;
+	padding-left: 30px;
+	box-shadow: 2px 5px 10px 2px #2F2933;
 }
 
 @keyframes giro{
